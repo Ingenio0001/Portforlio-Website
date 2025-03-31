@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boluwatife Alalade - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" data-section="home">BA</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#projects" data-section="projects">Projects</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="section active">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1><span class="norm-text">Hi, I'm </span><span class="name-highlight">Bolu</span><span>watife Alalade</span></h1>
+                        <p class="subtitle">A progressive Frontend Developer</p>
+                        <div class="cta-buttons">
+                            <a href="#" class="cta-button primary" data-section="contact">Get in Touch</a>
+                            <a href="#" class="cta-button secondary" data-section="projects">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="assets/Boluwatife portrait.jpg" alt="Boluwatife Alalade">
+                            <div class="skill-icons">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I'm a passionate web developer with a keen eye for creating beautiful and functional digital experiences. With a strong foundation in modern web technologies, I specialize in building responsive and user-friendly applications.</p>
+                            <p>My journey in web development began with a curiosity for creating things that live on the internet. I started with HTML and CSS, gradually moving to JavaScript and modern frameworks. Today, I'm proficient in building full-stack applications using React, Node.js, and various other technologies.</p>
+                            <p>I believe in writing clean, maintainable code and creating intuitive user interfaces that make a difference. My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences.</p>
+                        </div>
+                        <div class="skills-container">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4>Frontend Development</h4>
+                                    <ul class="skills-list">
+                                        <li><i class="fab fa-html5"></i><span>HTML5</span><div class="proficiency-bar" data-level="5"></div></li>
+                                        <li><i class="fab fa-css3-alt"></i><span>CSS3</span><div class="proficiency-bar" data-level="5"></div></li>
+                                        <li><i class="fab fa-js"></i><span>JavaScript</span><div class="proficiency-bar" data-level="4"></div></li>
+                                        <li><i class="fab fa-react"></i><span>React</span><div class="proficiency-bar" data-level="4"></div></li>
+                                        <li><i class="fab fa-tailwind"></i><span>Tailwind CSS</span><div class="proficiency-bar" data-level="4"></div></li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Backend Development</h4>
+                                    <ul class="skills-list">
+                                        <li><i class="fab fa-node-js"></i><span>Node.js</span><div class="proficiency-bar" data-level="2"></div></li>
+                                        <li><i class="fab fa-php"></i><span>PHP</span><div class="proficiency-bar" data-level="3"></div></li>
+                                        <li><i class="fas fa-database"></i><span>MySQL</span><div class="proficiency-bar" data-level="2"></div></li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Development Tools</h4>
+                                    <ul class="skills-list">
+                                        <li><i class="fab fa-git-alt"></i><span>Git</span><div class="proficiency-bar" data-level="4"></div></li>
+                                        <li><i class="fab fa-github"></i><span>GitHub</span><div class="proficiency-bar" data-level="5"></div></li>
+                                        <li><i class="fas fa-code-branch"></i><span>Version Control</span><div class="proficiency-bar" data-level="5"></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-content">
+                    <h2>Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="project1.jpg" alt="Project 1">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <p>Brief description of the project and its key features.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h2>Get in Touch</h2>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h3>Email</h3>
+                                        <a href="mailto:boluboala@gmail.com" class="contact-link">boluboala@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h3>Location</h3>
+                                        <p>Lagos, Nigeria</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h3>Phone</h3>
+                                        <a href="tel:+2348147147480" class="contact-link">+(234)8147147480</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/Ingenio0001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/boluwatifealalade/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; <span id="current-year"></span> Boluwatife Alalade. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
