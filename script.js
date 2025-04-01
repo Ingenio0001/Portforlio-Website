@@ -56,6 +56,26 @@ ctaButtons.forEach(button => {
     });
 });
 
+// Handle talk-to-contact link click
+const talkToContactLink = document.querySelector('.talk-to-contact');
+if (talkToContactLink) {
+    talkToContactLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = talkToContactLink.getAttribute('data-section');
+        switchSection(sectionId);
+    });
+}
+
+// Handle name-highlight link click
+const nameHighlightLink = document.querySelector('.name-highlight');
+if (nameHighlightLink) {
+    nameHighlightLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = nameHighlightLink.getAttribute('data-section');
+        switchSection(sectionId);
+    });
+}
+
 // Mobile menu toggle
 hamburger.addEventListener('click', (e) => {
     e.stopPropagation();
